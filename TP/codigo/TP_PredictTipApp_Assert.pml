@@ -1,9 +1,9 @@
+#define wait(s) atomic { (s > 0) -> s-- }
+#define signal(s) s++
+
 byte mutex = 1;
 int peso[5] = 0;
 byte enSC = 0;
-
-#define wait(s) atomic { (s > 0) -> s-- }
-#define signal(s) s++
 
 proctype EntrenamientoBatch() {
     int i = 0;
