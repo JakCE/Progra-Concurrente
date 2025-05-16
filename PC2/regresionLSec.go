@@ -36,7 +36,7 @@ func calcularRegresionLineal(X, Y []float64) (float64, float64) {
 }
 
 func main() {
-	n := 1000000
+	n := 2000000
 	X, Y := generarDatos(n)
 
 	start := time.Now()

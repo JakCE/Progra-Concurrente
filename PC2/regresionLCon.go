@@ -75,7 +75,7 @@ func calcularRegresionLinealConcurrente(X, Y []float64, numGoroutines int) (floa
 }
 
 func main() {
-	n := 1000000
+	n := 2000000
 	X, Y := generarDatos(n)
 
 	start := time.Now()
